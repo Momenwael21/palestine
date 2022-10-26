@@ -1,0 +1,197 @@
+/* start local fonts */
+@font-face {
+  src: url(../fonts/elmessiri/ArbFONTS-ElMessiri-Bold.ttf);
+  font-family: elmessiri-bold;
+}
+
+@font-face {
+  src: url(../fonts/elmessiri/ArbFONTS-ElMessiri-Regular.ttf);
+  font-family: elmessiri-regular;
+}
+/* end local fonts */
+
+/* start global rules */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --main-green: #95ae74;
+  --main-gray: #283233;
+}
+
+body {
+  font-family: elmessiri-regular;
+}
+/* end global rules */
+
+/* start header */
+header {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  display: flex;
+  justify-content: flex-end;
+  z-index: 2;
+}
+
+header div {
+  padding: 30px;
+  font-size: 26px;
+  color: var(--main-green);
+}
+
+/* end header */
+
+/* start landing */
+.landing {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  padding-top: 100px;
+}
+
+.landing .image {
+  width: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: url("../imgs/half.png") center center/100% 100% no-repeat;
+}
+
+.landing .description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  position: relative;
+  padding-right: 70px;
+}
+
+.landing .description h2 {
+  color: var(--main-gray);
+  font-size: 3rem;
+  text-align: end;
+  margin-bottom: 30px;
+  line-height: 1.6;
+  width: 100%;
+}
+
+.landing .description h2 span {
+  color: var(--main-green);
+}
+
+.landing .logo {
+  width: 100%;
+  height: 300px;
+  background: url("../imgs/logo.png") center center/ 80% 80% no-repeat;
+  margin: 0 0 20px 0;
+}
+
+.landing .description a {
+  text-decoration: none;
+  color: white;
+  background-color: var(--main-green);
+  padding: 10px 50px;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  font-size: 20px;
+}
+
+.landing .social {
+  display: flex;
+  flex-direction: column;
+  padding-right: 30px;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
+
+.landing .social svg {
+  padding: 3px;
+  width: 15px;
+  height: 15px;
+  border: 3px solid black;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  margin: 10px 0;
+}
+
+.landing .slider {
+  position: absolute;
+  bottom: 70px;
+  left: 30px;
+  width: 300px;
+  overflow: hidden;
+}
+
+.landing .slider .slider-wrapper {
+  display: flex;
+  width: 1800px;
+  transition: 0.3s all ease-in-out;
+  -webkit-transition: 0.3s all ease-in-out;
+  -moz-transition: 0.3s all ease-in-out;
+  -ms-transition: 0.3s all ease-in-out;
+  -o-transition: 0.3s all ease-in-out;
+}
+
+.landing .slider .slider-wrapper .text {
+  font-family: elmessiri-bold;
+  width: 300px;
+  position: relative;
+  text-align: center;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+
+.landing .slider .slider-wrapper .text .left-quote,
+.landing .slider .slider-wrapper .text .right-quote {
+  position: absolute;
+  opacity: 0.7;
+}
+
+.landing .slider .slider-wrapper .text .left-quote {
+  top: 0;
+  left: 0;
+}
+
+.landing .slider .slider-wrapper .text .right-quote {
+  bottom: 0;
+  right: 0;
+}
+
+.landing .slider .controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.landing .slider .controls svg {
+  margin: 0 15px;
+  padding: 7px;
+  width: 20px;
+  height: 20px;
+  color: white;
+  background-color: var(--main-green);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  cursor: pointer;
+}
+/* end landing */
