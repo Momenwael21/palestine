@@ -53,7 +53,10 @@ playerBtn.addEventListener("click", () => {
     playerBtn.innerHTML = '<i class="fa-solid fa-pause start-stop">';
   } else if (playerSvg.classList.contains("fa-pause")) {
     audioPlayer.pause();
-    playerBtn.innerHTML = "";
     playerBtn.innerHTML = '<i class="fa-solid fa-play start-stop">';
   }
+
+  audioPlayer.addEventListener("ended", () => {
+    playerBtn.innerHTML = '<i class="fa-solid fa-play start-stop">';
+  });
 });
