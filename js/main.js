@@ -46,6 +46,7 @@ let openBtn = document.querySelector("a.open");
 let audioPlayer = document.querySelector(".cause audio");
 
 openBtn.addEventListener("click", () => {
+  //set src
   audioPlayer.setAttribute(
     "src",
     "https://s21.aconvert.com/convert/p3r68-cdx67/hyienzhkr1/audio__________________.mp3"
