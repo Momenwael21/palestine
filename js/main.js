@@ -48,6 +48,6 @@ let audioPlayer = document.querySelector(".cause audio");
 openBtn.addEventListener("click", () => {
   audioPlayer.setAttribute(
     "src",
-    "../audio/وقضينا_إلى_بني_إسرائيل_في_الكتاب_لتفسدن_في_الأرض_مرتين_ولتعلن_علوا_كبيرا____خالد_الجليل.mp3"
+    "https://s21.aconvert.com/convert/p3r68-cdx67/hyienzhkr1/audio__________________.mp3"
   );
 });
