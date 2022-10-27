@@ -42,13 +42,18 @@ mapBtn.addEventListener("click", () => {
 });
 
 // play audio when click open button
-let openBtn = document.querySelector("a.open");
+let playerBtn = document.querySelector(".landing button");
 let audioPlayer = document.querySelector(".cause audio");
 
-openBtn.addEventListener("click", () => {
+playerBtn.addEventListener("click", () => {
   //set src
-  audioPlayer.setAttribute(
-    "src",
-    "https://s21.aconvert.com/convert/p3r68-cdx67/hyienzhkr1/audio__________________.mp3"
-  );
+  let playerSvg = document.querySelector(".landing button .start-stop");
+  if (playerSvg.classList.contains("fa-play")) {
+    audioPlayer.play();
+    playerBtn.innerHTML = '<i class="fa-solid fa-pause start-stop">';
+  } else if (playerSvg.classList.contains("fa-pause")) {
+    audioPlayer.pause();
+    playerBtn.innerHTML = "";
+    playerBtn.innerHTML = '<i class="fa-solid fa-play start-stop">';
+  }
 });

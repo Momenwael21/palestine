@@ -119,6 +119,35 @@ header div {
   margin: 0 0 20px 0;
 }
 
+.landing .description .btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.landing .description .btns button {
+  margin-left: 10px;
+  border: none;
+  outline: none;
+  background-color: var(--main-green);
+  color: white;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transition: 0.3s all ease-in-out;
+  -webkit-transition: 0.3s all ease-in-out;
+  -moz-transition: 0.3s all ease-in-out;
+  -ms-transition: 0.3s all ease-in-out;
+  -o-transition: 0.3s all ease-in-out;
+}
+
 .landing .description a {
   text-decoration: none;
   color: white;
@@ -137,7 +166,8 @@ header div {
   -o-transition: 0.3s all ease-in-out;
 }
 
-.landing .description a:hover {
+.landing .description a:hover,
+.landing .description button:hover {
   transform: scale(1.1);
   -webkit-transform: scale(1.1);
   -moz-transform: scale(1.1);
