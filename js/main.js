@@ -48,6 +48,6 @@ let audioPlayer = document.querySelector(".cause audio");
 openBtn.addEventListener("click", () => {
   audioPlayer.setAttribute(
     "src",
-    "../audio/وقضينا إلى بني إسرائيل في الكتاب لتفسدن في الأرض مرتين ولتعلن علوا كبيرا خالد الجليل [TubeRipper.com].webm"
+    "../audio/وقضينا_إلى_بني_إسرائيل_في_الكتاب_لتفسدن_في_الأرض_مرتين_ولتعلن_علوا_كبيرا____خالد_الجليل.mp3"
   );
 });

@@ -42,12 +42,9 @@ header {
   z-index: 2;
 }
 
-header h4 {
-  font-size: 20px;
-  z-index: -1;
-}
-
 header div {
+  position: fixed;
+  top: 0;
   padding: 30px;
   font-size: 26px;
   color: var(--main-green);
@@ -295,7 +292,7 @@ header div {
   display: flex;
   align-items: center;
   justify-content: center;
-  position: absolute;
+  position: fixed;
   top: 0;
   width: 100%;
   clip-path: circle(0 at 97% 7%);
